@@ -29,6 +29,15 @@ div#tweede div,
 div#derde div,
 div#vierde div {
   position: absolute;
+  z-index: -1;
+}
+
+#eerste:hover div,
+#tweede:hover div,
+#derde:hover div,
+#vierde:hover div {
+  z-index: 0;
+  cursor: pointer;
 }
 
 div#eerste div {
@@ -90,15 +99,15 @@ div#derde div:nth-of-type(4) {
   left: 40px;
 }
 
-div#vierde div{
+div#vierde div {
   width: 50px;
   height: 250px;
 }
 div#vierde div:nth-of-type(1) {
   background-color: rgb(95, 193, 226);
-left: 120px;
+  left: 120px;
 }
 div#vierde div:nth-of-type(2) {
   background-color: rgb(105, 241, 105);
-left: 180px;
+  left: 180px;
 }
